@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46">
+  <g id="Group_16" data-name="Group 16" transform="translate(-102 -46)">
+    <path id="Path_16" data-name="Path 16" d="M23,0A23,23,0,1,1,0,23,23,23,0,0,1,23,0Z" transform="translate(102 46)" fill="#fff"/>
+    <g id="Iconly_Light_Buy" data-name="Iconly/Light/Buy" transform="translate(113 57)">
+      <g id="Buy" transform="translate(2 2.5)">
+        <path id="Stroke_1" data-name="Stroke 1" d="M.764,0A.765.765,0,1,1,0,.765.766.766,0,0,1,.764,0Z" transform="translate(4.658 17.32)" fill="none" stroke="#6917f9" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+        <path id="Stroke_3" data-name="Stroke 3" d="M.765,0A.765.765,0,1,1,0,.765.766.766,0,0,1,.765,0Z" transform="translate(15.91 17.32)" fill="none" stroke="#6917f9" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+        <path id="Stroke_5" data-name="Stroke 5" d="M0,0,2.08.36l.963,11.473a1.8,1.8,0,0,0,1.8,1.653H15.752a1.8,1.8,0,0,0,1.785-1.546l.949-6.558a1.341,1.341,0,0,0-1.327-1.533H2.414" transform="translate(0.75 0.75)" fill="none" stroke="#6917f9" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+        <path id="Stroke_7" data-name="Stroke 7" d="M0,.5H2.773" transform="translate(12.125 7.795)" fill="none" stroke="#6917f9" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

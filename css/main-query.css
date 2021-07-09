@@ -1,0 +1,253 @@
+/*------Start header------*/
+@media screen and (max-width : 768px )
+{
+	.header
+	{
+		width : 100%;
+		height : 85vh;
+	}
+	.header .nav{
+		display : none;
+	}
+	.responsive-nav{
+		display : flex;
+	}
+	.header .header-body h2{
+	font-size : 40px;
+	}
+	.header .header-body>p{
+		font-size : 15px;
+	}
+	.header .header-body a{
+		gap : 15px;
+		padding : 10px 20px ;
+		font-size : 13px;
+	}
+	.header .header-body a .bottom-arrow
+	{
+		width : 12px;
+		height : 12px;
+	}
+	
+}
+@media screen and (max-width : 576px )
+{
+	.header
+	{
+		width : 100%;
+		height : 70vh;
+	}
+	.header .nav{
+		display : none;
+	}
+	.responsive-nav{
+		display : flex;
+	}
+	.header .header-body h2{
+	font-size : 30px;
+	}
+	.header .header-body>p{
+		font-size : 12px;
+	}
+	.header .header-body a{
+		gap : 15px;
+		padding : 8px 16px ;
+		font-size : 11px;
+	}
+	.header .header-body a .bottom-arrow
+	{
+		width : 9px;
+		height : 9px;
+	}
+}
+/*------End header-------*/
+/*------Start why we--------*/
+@media screen and (max-width : 992px )
+{
+	.why-we .why-we-boxs .box
+	{
+		margin-bottom : 60px;
+	}
+}
+@media screen and (max-width : 768px )
+{
+	.why-we h1
+	{
+		font-size : 50px;
+		padding-bottom : 50px;
+	}
+	.why-we .why-we-boxs .box
+	{
+		
+		gap : 12px;
+		padding : 60px 15px 40px 15px;
+		margin-bottom : 60px;
+		
+	}
+	.why-we .why-we-boxs .box h2
+	{
+		font-size : 35px
+	}
+	.why-we .why-we-boxs .box p
+	{
+		font-size : 25px
+	}
+}
+@media screen and (max-width : 576px )
+{
+	.why-we h1
+	{
+		font-size : 30px;
+		padding-bottom : 40px;
+	}
+	.why-we .why-we-boxs .box
+	{
+		
+		gap : 10px;
+		padding : 50px 12px 32px 12px;
+		margin-bottom : 60px;
+		
+	}
+	.why-we .why-we-boxs .box h2
+	{
+		font-size : 25px
+	}
+	.why-we .why-we-boxs .box p
+	{
+		font-size : 18px
+	}
+}
+/*------End why we----------*/
+/*---------Start Articles--------*/
+@media screen and (max-width : 992px )
+{
+	
+}
+@media screen and (max-width : 768px )
+{
+	.articles h1
+	{
+		font-size : 50px;
+	}
+	.articles .articles-boxs .article-box
+	{
+		gap : 10px;
+		margin-bottom : 60px;
+	}
+}
+@media screen and (max-width : 576px )
+{
+	.articles h1
+	{
+		font-size : 30px;
+	}
+	.articles .articles-boxs .article-box
+	{
+		gap : 10px;
+		margin-bottom : 60px;
+	}
+	
+}
+/*---------End Articles----------*/
+/*--------Start services---------*/
+@media screen and (max-width : 992px )
+{
+	
+}
+@media screen and (max-width : 768px )
+{
+	.services .n-responsive
+	{
+		display : none;
+	}
+	.services .responsive
+	{
+		display : block;
+	}
+	.services .heading h1
+	{
+		padding : 70px 0;
+	}
+}
+@media screen and (max-width : 576px )
+{
+	.services .n-responsive
+	{
+		display : none;
+	}
+	.services .responsive
+	{
+		display : block;
+	}
+	.services .heading h1
+	{
+		padding : 70px 0;
+	}
+}
+/*--------End  services----------*/
+/*----------Start oponion customers----------*/
+@media screen and (max-width : 992px )
+{
+	
+}
+@media screen and (max-width : 768px )
+{
+	.opnion-customers h2
+	{
+		font-size : 50px
+	}
+	.opnion-customers .oponion-box h1
+	{
+		font-size : 40px;
+	}
+}
+@media screen and (max-width : 576px )
+{
+	.opnion-customers h2
+	{
+		font-size : 30px
+	}
+	.opnion-customers .oponion-box h1
+	{
+		font-size : 30px;
+	}
+}
+/*----------End oponion customers------------*/
+/*---------Start footer------------------------*/
+@media screen and (max-width : 992px )
+{
+	
+}
+@media screen and (max-width : 768px )
+{
+	.footer .bottom-footers
+	{
+		display : flex;
+		box-sizing:  border-box;
+		padding : 15px 0;
+		flex-wrap : wrap;
+		flex-direction : column;
+	}
+	.footer .bottom-footers .fast-access
+	{
+		justify-content   : flex-start;	
+		padding-right : 30px;
+	}
+	.footer .bottom-footers
+	{
+		gap : 15px;
+	}
+	.hooshdigital p
+	{
+		font-size : 18px;
+	}
+	
+}
+@media screen and (max-width : 576px )
+{
+	.hooshdigital p
+	{
+		font-size : 12px;
+	}
+}
+/*---------End footer--------------------------*/

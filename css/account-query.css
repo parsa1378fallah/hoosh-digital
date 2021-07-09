@@ -1,0 +1,34 @@
+@media screen and (max-width : 992px )
+{
+	
+}
+@media screen and (max-width : 768px )
+{
+    .account
+    {
+        height : 240vh;
+    }
+	.account .account-boxs
+    {
+       flex-direction: column;
+    }
+    .account .account-boxs .account-box .edit-information
+    {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width : 576px )
+{
+	.account
+    {
+        height : 240vh;
+    }
+	.account .account-boxs
+    {
+       flex-direction: column;
+    }
+    .account .account-boxs .account-box .edit-information
+    {
+        flex-direction: column;
+    }
+}

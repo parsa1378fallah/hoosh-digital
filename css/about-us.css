@@ -1,0 +1,513 @@
+/*----------Start globle styles----------*/
+@font-face{
+	font-family : 'Byekan';
+	src  : url('../fonts/Byekan.ttf');
+}
+*
+{
+	margin : 0;
+	padding : 0;
+	box-sizing : inherit;
+	direction : rtl !important;
+	font-family : Byekan;
+	text-align : right;
+}
+body
+{
+	overflow-X : hidden;
+	background : #E9E8E8;
+}
+html
+{
+	
+	box-sizing : border-box;
+}
+a
+{
+	text-decoration : none;
+	color : #000;
+}
+ul
+{
+	list-style : none;
+}
+img{
+	max-width : 100%;
+}
+.container
+{ 
+	width : 100%;
+	max-width : 117rem;
+	margin : 0 auto;
+	padding : 0 1.6rem;
+}
+/*----------End globle stylrs--------------------*/
+/*-------------Start Navigation-------------------*/
+.header{
+	position : relative;
+	width : 100%;
+	height : 100vh;
+	display : flex;
+	justify-content : center;
+	align-items : center;
+	background : url('../img/header.jpg');
+	background-position : center center;
+	background-size : cover;
+}
+/*----------Start top navbar--------*/
+.header .nav
+{
+	position : absolute;
+	width : 96%;
+	height : 75px;
+	top : 0;
+	left : 50%;
+	transform : translateX(-50%);
+	display : flex;
+	justify-content : space-between;	
+	align-items : center;
+	z-index : 100;
+}
+.header .nav .nav-img
+{
+	margin-right : 15px;
+}
+.header .nav .nav-img img
+{
+	width : 70%;
+	transform : translateY(10px);
+}
+.header .nav .navbar
+{
+	display : flex;
+	gap : 10px;
+}
+.header .nav .navbar .nav-item .nav-link
+{
+	color : #fff;
+	position : relative;
+}
+.header .nav .navbar .nav-item .nav-link.actived:after
+{
+	content : '';
+	position : absolute;
+	top : 100%;
+	left : 0;
+	width : 100%;
+	height : 2px;
+	background : #fff;
+}
+.header .nav .nav-icons{
+	display : flex;
+	gap : 0px;
+}
+.header .nav .nav-icons img
+{
+	transform : scale(0.7);
+}
+.header .nav .nav-icons .nav-link
+{
+	display : flex;
+	justify-content : center;
+	align-items : center;
+	width : 30px;
+	height : 30px;
+	border-radius : 50%;
+	background : #F2EEEE;	
+}
+.header .nav .nav-icons .icon:not(:last-child)
+{
+	margin-left : 10px;
+}
+/*-----------Start top navbar responsive------*/
+.responsive-nav
+{
+	position : absolute;
+	width : 96%;
+	height : 75px;
+	top : 0;
+	left : 50%;
+	transform : translateX(-50%);
+	display : none;
+	justify-content : space-between;	
+	align-items : center;
+	z-index : 1000;
+}
+.responsive-nav .responsive-nav-main
+{
+	width : 100%;
+	height : 100%;
+	display : flex;
+	justify-content : space-between;
+	z-index : 1000;
+}
+.responsive-nav .responsive-nav-main .lines
+{
+	display : flex;
+	justify-content : center;
+	align-items : center;
+	flex-direction : column;
+	gap : 10px;
+	cursor : pointer;
+}
+.responsive-nav .responsive-nav-main .lines .line
+{
+	width : 35px;
+	height : 2px;
+	background : #fff;
+}
+.responsive-nav .responsive-nav-main .image img
+{
+	transform : scale(0.7);
+} 
+.responsive-nav  .responsive-nav-items
+{
+	position : absolute;
+	width : 100%;
+	top : 110%;
+	left:  0;
+	display : none;
+	flex-direction : column;	
+	z-index : 1000;
+}
+.responsive-nav  .responsive-nav-items .navbar
+{
+	display : block;
+	z-index : 10000;
+	background : rgba(12,12,120,0.9);
+}
+.responsive-nav  .responsive-nav-items .navbar .nav-item
+{
+
+}
+.responsive-nav  .responsive-nav-items .navbar .nav-item .nav-link
+{
+	display : flex;
+	justify-content : center;
+	align-items : center;
+	border-bottom : 1px solid #000;
+	color : #fff;
+	
+}
+/*-------------Start header body---------*/
+.header .header-body
+{
+	display : flex;
+	flex-direction : column;
+	justify-content : center;
+	align-items : center;
+	gap : 30px;
+	z-index : 100;
+}
+.header .header-body h1{
+	color:  #fff;
+	font-size : 60px;
+}
+.header .header-body>p{
+	color : #fff;
+	font-size : 25px;
+}
+.header .header-body a{
+	gap : 20px;
+	justify-content : center;
+	align-items : center;
+	padding : 15px 30px ;
+	border-radius : 10px;
+	background : rgba(181,161,255,0.5);
+	backdrop-filter : blur(3px);
+	-webkit-backdrop-filter : blur(3px);
+	color : #fff;
+	backdrop-filter : blur(4px);
+	font-size : 20px;
+}
+.header .header-body a:hover
+{
+	text-decoration : none;
+}
+.header .header-body a .bottom-arrow{
+	width : 16px;
+	height : 16px;
+	border-right : 1px solid #fff;
+	border-bottom : 1px solid #fff;
+	transform : translateY(-5px) rotate(45deg);
+}
+.header .header-body a .text
+{
+	transform : translateY(10px);
+}
+.header .header-body .slide
+{
+	position : absolute;
+	top : 90%;
+	left : 50%;
+	transform : translate(-50%,-50%) scale(0.6);
+}
+/*-----------header cover------------------------*/
+.header::after
+{
+	content : '';
+	position : absolute;
+	top : 0;
+	left : 0;
+	right : 0;
+	bottom : 0;
+	background : #4317F9;
+	opacity : 0.5;
+	z-index : 1;
+}
+/*---------------End Navigation-------------------*/
+/*----------------Start Get to know us -----------------*/
+.know-us
+{
+	position : relative;
+	width : 100%;
+	padding-top : 20px;
+}
+.know-us h1
+{
+	text-align : center;
+	padding-bottom : 70px;
+}
+.know-us .know-us-boxs{}
+.know-us .know-us-boxs .box
+{
+	position : relative;
+	flex : 1;
+	display : flex;
+	flex-direction : column;
+	justify-content:  center;
+	align-items : center;
+	gap : 15px;
+	padding : 100px 20px 50px 20px;
+	border-radius : 15px;
+	background : #fff;
+	margin : 60px 40px;
+	
+}
+.know-us .know-us-boxs .box h2,
+.know-us .know-us-boxs .box p
+{
+	text-align : center;
+}
+.know-us .know-us-boxs .box h2
+{
+	font-size : 40px;
+}
+.know-us .know-us-boxs .box p
+{
+	font-size : 30px;
+}
+.know-us .know-us-boxs .box .top-icon
+{
+	position : absolute;
+	top : 0;
+	left : 50%;	
+	transform : translate(-50%,-50%) scale(0.8);
+	width : 200px;
+	height : 200px;
+	border-radius:  50%;
+	display : flex;
+	justify-content : center;
+	align-items : center;
+	background : #8C6ED9;
+	border : 5px solid #DCDCDC;	
+}
+.know-us .know-us-boxs .box .know-us-icons
+{
+	display : flex;
+	justify-content:  center;
+	margin : 0 auto;
+	display : flex;
+	gap : 20px;
+	padding : 20px;
+	flex-wrap : wrap;
+}
+.know-us .know-us-boxs .box .know-us-icons .know-us-link
+{
+	width : 40px;
+	height : 40px;
+	background : #FFFFFF;
+	display : flex;
+	
+	justify-content : center;
+	align-items : center;
+	transform : rotate(45deg);
+	border-radius : 5px;
+	box-shadow : 2px 2px 5px rgba(0,0,0,0.2);
+	transition : all 0.2s;
+	position : relative;
+}
+.know-us .know-us-boxs .box .know-us-icons .know-us-link img
+{
+	
+	transform : rotate(-45deg);
+	transition : all 0.2s;
+}
+.know-us .know-us-boxs .box .know-us-icons .know-us-link:hover
+{
+	transform : rotate(0);
+	background : #4317F9;
+}
+.know-us .know-us-boxs .box .know-us-icons .know-us-link:hover img
+{
+	transform : rotate(0);
+	
+}
+/*----------------ٍEnd Get to know us--------------------*/
+/*-----------------Start footer-----------------*/
+.footer
+{
+	position : relative;
+	width : 100%;
+	padding-top : 30px;
+	background : #FFFFFF;
+}
+/*-------------Start top footer-------------------*/
+.footer .top-footer
+{
+	display : flex;
+	justify-content:  center;
+	margin : 0 auto;
+	display : flex;
+	gap : 20px;
+	padding : 20px;
+	flex-wrap : wrap;
+}
+.footer .top-footer .footer-link
+{
+	width : 40px;
+	height : 40px;
+	background : #FFFFFF;
+	display : flex;
+	justify-content : center;
+	align-items : center;
+	transform : rotate(45deg);
+	border-radius : 5px;
+	box-shadow : 2px 2px 5px rgba(0,0,0,0.2);
+	transition : all 0.2s;
+}
+.footer .top-footer .footer-link img
+{
+	
+	transform : rotate(-45deg);
+	transition : all 0.2s;
+}
+.footer .top-footer .footer-link:hover
+{
+	transform : rotate(0);
+	background : #4317F9;
+}
+.footer .top-footer .footer-link:hover img
+{
+	transform : rotate(0);
+	
+}
+/*-----------bottom footer------------------*/
+.footer .bottom-footers
+{
+	display : flex;
+	box-sizing:  border-box;
+	padding : 15px 0;
+	flex-wrap : wrap;
+}
+.footer .bottom-footers .bottom-footer
+{
+	flex : 1;
+	display : flex;
+	flex-wrap : wrap;
+}
+.footer .bottom-footers .fast-access
+{
+	align-items : center;
+	justify-content   : center;	
+}
+.footer .bottom-footers .fast-access .f-box
+{
+	display : flex;
+	flex-direction : column;
+	gap : 10px;
+}
+.footer .bottom-footers .fast-access .f-box h3,
+.footer .bottom-footers .fast-access .f-box a
+{
+	color : #7D7D7D;
+}
+.footer .bottom-footers .fast-access .f-box a:hover
+{
+	text-decoration : none;
+}
+.footer .bottom-footers .contact-us
+{
+	flex-direction : column;
+	justify-content : center;
+	gap : 15px;
+	padding-right : 30px;
+}
+.footer .bottom-footers .contact-us p,
+.footer .bottom-footers .contact-us h3
+{
+	color : #7D7D7D;
+	display : flex;
+	align-items : center;
+}
+.footer .bottom-footers .contact-us img
+{
+	transform : scale(0.7);
+}
+.footer .bottom-footers .contact-us p
+{
+	display : flex;
+	gap : 6px;
+}
+.footer .bottom-footers .electronic-symbol
+{
+	display : flex;
+	justify-content : center;
+	align-items : flex-end;
+	gap  : 20px;
+	position : relative;
+}
+.footer .bottom-footers .electronic-symbol img
+{
+	width : 33%;
+}
+.hooshdigital
+{
+	width : 100%;
+	padding : 15px 0;
+	display : flex;
+	justify-content : center;
+	align-items  : center;
+	background : #CFCFCF;
+}
+.hooshdigital p
+{
+	margin-bottom : 0;
+}
+/*-----------------End footer------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

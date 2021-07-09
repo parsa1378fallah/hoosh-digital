@@ -1,0 +1,178 @@
+/*----------Start globle styles----------*/
+@font-face{
+	font-family : 'Byekan';
+	src  : url('../fonts/Byekan.ttf');
+}
+*
+{
+	margin : 0;
+	padding : 0;
+	box-sizing : inherit;
+	direction : rtl !important;
+	font-family : Byekan;
+	text-align : right;
+}
+body
+{
+	overflow-X : hidden;
+	background : #E9E8E8;
+}
+html
+{
+	
+	box-sizing : border-box;
+}
+a
+{
+	text-decoration : none;
+	color : #000;
+}
+a:hover
+{
+	text-decoration : none;
+}
+ul
+{
+	list-style : none;
+}
+img
+{
+	max-width : 100%;
+}
+.container
+{ 
+	width : 100%;
+	max-width : 117rem;
+	margin : 0 auto;
+	padding : 0 1.6rem;
+}
+/*------------Start login-----------------*/
+.login
+{
+	width : 100%;
+	height : 100vh;
+	background : url('../img/header.jpg');
+	background-position : center center;
+	background-size : cover;
+	background-repeat : no-repeat;
+	display : flex;
+	justify-content : center;
+	align-items : center;
+	position : relative;
+
+}
+.login .login-boxs
+{
+	display : flex;
+	background : transparent; 
+	position : relative;
+	z-index : 100;
+}
+/*----------Start login box-------------*/
+.login .login-boxs .login-box
+{
+	flex : 3;
+	display : flex;
+	flex-direction : column;
+	justify-content : center;
+	align-items : center;
+	gap : 15px;
+	padding : 95px 20px;
+	position : relative;
+	background : rgba(34,6,135,0.4);
+	-webkit-backdrop-filter: blur(8px);
+	backdrop-filter : blur(8px);	
+}
+.login .login-boxs .login-box .text
+{
+	color : #fff;
+	font-size : 25px;
+	margin-left : auto;
+	margin-right : 30px;
+}
+.login .login-boxs .login-box .email,
+.login .login-boxs .login-box .password
+{
+	text-align : left;
+	width : 80%;
+	height : 40px;
+	padding : 15px 20px ;
+	font-size : 15px;	
+	border : none;
+	outline : none;
+	border-radius : 15px;
+	background : rgba(255,255,255,0.6);	
+}
+.login .login-boxs .login-box .remember-me
+{
+	width : 100%;
+}
+.login .login-boxs .login-box .remember-me .remember-me-text
+{
+	color : #fff;
+	font-size : 17px;
+	margin-left : auto;
+	margin-right : 30px;
+}
+.login .login-boxs .login-box .get-in
+{
+	padding : 5px 20px;
+	background : #0ED27E;
+	margin-right:  auto;
+	margin-left :10%;
+	border : none;
+	outline : none;
+	border-radius : 10px;
+	color : #fff;
+}
+/*----Start login content-------------------*/
+.login .login-boxs .login-content
+{
+	flex : 1;
+	display : flex;
+	flex-direction : column;
+	display : flex;
+	justify-content : center;
+	align-items : center;
+	padding : 135px 20px;
+	background : rgba(255,255,255,0.4);
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter : blur(5px);
+	position : relative;
+}
+.login .login-boxs .login-content h1
+{
+	font-size : 40px;
+	color:  #000;
+}
+.login .login-boxs .login-content p
+{
+	font-size : 18px;
+	text-align : center;
+}
+.login .login-boxs .login-content p>a
+{
+	color : #002AFE;
+}
+.login .login-boxs .login-content>a
+{
+	color : #fff;
+	padding : 7px 15px;
+	font-size : 20px;
+	background : #239DDC;
+	border-radius : 4px;
+}
+/*------------End login-------------------*/
+/*----------Start cover-----------------*/
+.cover
+{
+	position : absolute;
+	top : 0;
+	left : 0;
+	right : 0;
+	bottom : 0;
+	background : rgba(67,23,249,0.4);
+	z-index : 1;
+	
+}
+/*----------End cover-------------------*/

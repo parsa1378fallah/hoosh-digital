@@ -1,0 +1,20 @@
+@media screen and (max-width : 992px )
+{
+	
+}
+@media screen and (max-width : 900px )
+{
+	.course
+	{
+		width : 100%;
+		height : 200vh;
+	}
+	.course .course-boxs
+	{
+		flex-direction : column;
+	}
+}
+@media screen and (max-width : 576px )
+{
+	
+}

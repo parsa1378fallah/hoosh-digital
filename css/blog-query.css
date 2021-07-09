@@ -1,0 +1,132 @@
+/*------Start header------*/
+@media screen and (max-width : 768px )
+{
+	.header
+	{
+		width : 100%;
+		height : 85vh;
+	}
+	.header .nav{
+		display : none;
+	}
+	.responsive-nav{
+		display : flex;
+	}
+	.header .header-body h2{
+	font-size : 40px;
+	}
+	.header .header-body>p{
+		font-size : 15px;
+	}
+	.header .header-body a{
+		gap : 15px;
+		padding : 10px 20px ;
+		font-size : 13px;
+	}
+	.header .header-body a .bottom-arrow
+	{
+		width : 12px;
+		height : 12px;
+	}
+	
+}
+@media screen and (max-width : 576px )
+{
+	.header
+	{
+		width : 100%;
+		height : 70vh;
+	}
+	.header .nav{
+		display : none;
+	}
+	.responsive-nav{
+		display : flex;
+	}
+	.header .header-body h2{
+	font-size : 30px;
+	}
+	.header .header-body>p{
+		font-size : 12px;
+	}
+	.header .header-body a{
+		gap : 15px;
+		padding : 8px 16px ;
+		font-size : 11px;
+	}
+	.header .header-body a .bottom-arrow
+	{
+		width : 9px;
+		height : 9px;
+	}
+}
+/*------End header-------*/
+/*---------Start Articles--------*/
+@media screen and (max-width : 992px )
+{
+	
+}
+@media screen and (max-width : 768px )
+{
+	.articles h1
+	{
+		font-size : 50px;
+	}
+	.articles .articles-boxs .article-box
+	{
+		gap : 10px;
+		margin-bottom : 60px;
+	}
+}
+@media screen and (max-width : 576px )
+{
+	.articles h1
+	{
+		font-size : 30px;
+	}
+	.articles .articles-boxs .article-box
+	{
+		gap : 10px;
+		margin-bottom : 60px;
+	}
+	
+}
+/*---------End Articles----------*/
+/*---------Start footer------------------------*/
+@media screen and (max-width : 992px )
+{
+	
+}
+@media screen and (max-width : 768px )
+{
+	.footer .bottom-footers
+	{
+		display : flex;
+		box-sizing:  border-box;
+		padding : 15px 0;
+		flex-wrap : wrap;
+		flex-direction : column;
+	}
+	.footer .bottom-footers .fast-access
+	{
+		justify-content   : flex-start;	
+		padding-right : 30px;
+	}
+	.footer .bottom-footers
+	{
+		gap : 15px;
+	}
+	.hooshdigital p
+	{
+		font-size : 18px;
+	}
+	
+}
+@media screen and (max-width : 576px )
+{
+	.hooshdigital p
+	{
+		font-size : 12px;
+	}
+}
+/*---------End footer--------------------------*/

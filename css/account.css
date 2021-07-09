@@ -1,0 +1,241 @@
+/*----------Start globle styles----------*/
+@font-face{
+	font-family : 'Byekan';
+	src  : url('../fonts/Byekan.ttf');
+}
+*
+{
+	margin : 0;
+	padding : 0;
+	box-sizing : inherit;
+	direction : rtl !important;
+	font-family : Byekan;
+	text-align : right;
+}
+body
+{
+	overflow-X : hidden;
+	background : #E9E8E8;
+}
+html
+{
+	
+	box-sizing : border-box;
+}
+a
+{
+	text-decoration : none;
+	color : #000;
+}
+a:hover
+{
+	text-decoration : none;
+	color : #000;
+}
+ul
+{
+	list-style : none;
+}
+img
+{
+	max-width : 100%;
+}
+.container
+{ 
+	width : 100%;
+	max-width : 117rem;
+	margin : 0 auto;
+	padding : 0 1.6rem;
+}
+/*---------------End globle styles----------*/
+/*------------Start account-----------------*/
+.account
+{
+	width : 100%;
+	height : 100vh;
+	background : url('../img/header.jpg');
+	background-position : center center;
+	background-size : cover;
+	background-repeat : no-repeat;
+	display : flex;
+	justify-content : center;
+	align-items : center;
+	position : relative;
+	
+
+}
+.account .account-boxs
+{
+	display : flex;
+	background : transparent; 
+	position : relative;
+	z-index : 100;
+}
+
+/*----------Start account box-------------*/
+.account .account-boxs .account-box
+{
+	flex : 3;
+	display : flex;
+	flex-direction : column;
+	justify-content : flex-start;
+	align-items : center;
+	gap : 15px;
+	position : relative;
+	background : rgba(34,6,135,0.4);
+	-webkit-backdrop-filter: blur(8px);
+	backdrop-filter : blur(8px);	
+	padding: 20px;
+}
+/*-------Statr edit picture-----------------*/
+.account .account-boxs .account-box .edit-picture
+{
+	flex : 1;
+	width : 95%;
+	height : 200px;
+	background: url('../img/user1.png');
+	background-position: center center;
+	background-repeat:no-repeat;
+	background-size: 120% 300%;
+	margin : 2.5% auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap : 5px;
+	position: relative;
+
+}
+.account .account-boxs .account-box .edit-picture::after
+{
+	content : '';
+	position: absolute;
+	top : 0;
+	bottom: 0;
+	left : 0;
+	right : 0;
+	background-color : rgba(0,0,0,0.6);
+	backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+	z-index: 1;
+}
+.account .account-boxs .account-box .edit-picture img
+{
+	z-index: 10;
+	transform: scale(0.8);
+}
+.account .account-boxs .account-box .edit-picture p
+{
+	color : #fff;
+	font-size: 20px;
+	font-weight: 700;
+	z-index: 10;
+}
+/*----------Start edit-information-----------------------*/
+.account .account-boxs .account-box .edit-information
+{
+	flex : 1;
+	display: flex;
+	gap : 10px;
+	width : 100%;
+}
+.account .account-boxs .account-box .edit-information .name-email
+{
+	flex : 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 5px;
+}
+.account .account-boxs .account-box .edit-information .user-phoneNumber
+{
+	flex : 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 5px;
+}
+.account .account-boxs .account-box .edit-information p
+{
+	color : #fff;
+	font-size: 20px;
+	transform: translateY(10px);
+}
+.account .account-boxs .account-box .edit-information input
+{
+	width : 100%;
+	height : 40px;
+	font-size: 15px;
+	text-align: left;
+	background: rgba(255,255,255,0.5);
+	outline: none;
+	border : none;
+	padding: 5px 15px;
+	border-radius: 15px;
+}
+
+/*----Start account content-------------------*/
+.account .account-boxs .account-content
+{
+	flex : 1;
+	display : flex;
+	flex-direction : column;
+	display : flex;
+	justify-content : center;
+	align-items : center;
+	gap : 5px;
+	background : rgba(255,255,255,0.4);
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter : blur(5px);
+	position : relative;
+	border-radius : 0  15px 15px 0;
+	padding: 40px 0;
+}
+.account .account-boxs .account-content img
+{
+	transform: scale(0.6);
+}
+.account .account-boxs .account-content h1
+{
+	font-size: 30px;
+	transform: translateY(-15px);
+}
+.account .account-boxs .account-content p
+{
+	font-size: 12px;
+}
+.account .account-boxs .account-content .buttons
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap : 5px;
+	width: 100%;
+}
+.account .account-boxs .account-content .buttons a
+{
+	width : 80%;
+	height : 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	border-radius: 5px;
+	gap : 1px;
+	font-size: 13px;
+}
+/*------------End account----------------------*/
+/*------------Start cover----------------------*/
+.cover
+{
+	position : absolute;
+	top : 0;
+	left : 0;
+	right : 0;
+	bottom : 0;
+	background : rgba(67,23,249,0.4);
+	z-index : 1;
+	
+}
+/*--------------End cover-------------------*/

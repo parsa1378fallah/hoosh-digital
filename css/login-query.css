@@ -1,0 +1,21 @@
+@media screen and (max-width : 992px )
+{
+	
+}
+@media screen and (max-width : 768px )
+{
+	.login
+	{
+		width : 100%;
+		height : 200vh;
+	}
+	.login .login-boxs
+	{
+		flex-direction : column;
+		direction : ltr;
+	}
+}
+@media screen and (max-width : 576px )
+{
+	
+}
